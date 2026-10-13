@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Thorough code reviews for bugs and risks"
+  default_prompt: "Use $code-review to run a read-only, thorough review of all relevant files and report logic bugs, type errors, security issues, performance risks, and any requested focus areas."

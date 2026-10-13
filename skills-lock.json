@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "create-pr": {
+      "source": "ueberdosis/tiptap",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/create-pr/SKILL.md",
+      "computedHash": "db6a40b88838d544e52f892f87ca81d4b03fd76b6835fb7d0f8fe6d01b7ca72c"
+    },
+    "tiptap": {
+      "source": "ueberdosis/tiptap",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/tiptap/SKILL.md",
+      "computedHash": "88ea00fb5ca1fed01160dc0baec4767fa0279d037ed9c8ee20a6ea43eb28b8ea"
+    }
+  }
+}
