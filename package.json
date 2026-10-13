@@ -1,0 +1,62 @@
+{
+  "name": "codex-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "bun run test:unit && bun run test:integration",
+    "db:migrate": "bun scripts/migrate.ts",
+    "dev": "bun run --bun next dev --webpack",
+    "build": "bun run --bun next build --webpack",
+    "start": "bun run --bun next start",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "test:unit": "node node_modules/vitest/vitest.mjs run --project unit",
+    "test:integration": "bun run --bun vitest run --project integration",
+    "test:watch": "node node_modules/vitest/vitest.mjs --project unit",
+    "test:e2e": "bun scripts/test-e2e.ts",
+    "test:all": "bun run test && bun run test:e2e"
+  },
+  "dependencies": {
+    "@tiptap/core": "3.31.4",
+    "@tiptap/pm": "3.31.4",
+    "@tiptap/react": "3.31.4",
+    "@tiptap/starter-kit": "3.31.4",
+    "@tiptap/static-renderer": "3.31.4",
+    "better-auth": "1.7.7",
+    "next": "16.4.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sanitize-html": "2.18.0",
+    "server-only": "0.0.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/sanitize-html": "2.16.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.0.0",
+    "eslint-config-next": "16.4.0",
+    "jsdom": "^30.1.2",
+    "oxfmt": "^0.33.0",
+    "oxlint": "^1.48.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^5.0.3"
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
+}
